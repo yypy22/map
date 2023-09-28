@@ -30,4 +30,7 @@ merged = pd.merge(map,now)
 merged.plot(column="Census Population Oct 1, 2020",cmap="Spectral")
 
 fig,ax = plt.subplots(figsize=(30,30))
+bar = plt.cm.ScalarMappable(cmap="Spectral")
+fig.colorbar(bar, label="Population")
+
 plt.show()
